@@ -62,7 +62,7 @@ export default function App() {
               </div>
               <h1 className="font-extrabold text-2xl md:text-3xl text-gray-900">AI Personas Showcase</h1>
             </div>
-            <div className="text-xs md:text-sm text-gray-600">Switch personas • Chat persists until refresh</div>
+            <div className="text-xs md:text-sm text-gray-600">Chat persists until refresh</div>
           </div>
         </div>
       </header>
