@@ -9,8 +9,8 @@ import { BACKEND_URL } from './utils/constants'
 
 export default function App() {
   const personas = useMemo(() => ([
-    { id: 'persona1', name: 'Hitesh', icon: '✨' },
-    { id: 'persona2', name: 'Piyush', icon: '🪐' }
+    { id: 'persona1', name: 'Hitesh Choudhary', icon: '✨' },
+    { id: 'persona2', name: 'Piyush Garg', icon: '🪐' }
   ]), [])
 
   const [activePersona, setActivePersona] = useState(personas[0].id)
@@ -53,17 +53,13 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-brand-50 via-white to-brand-100 bg-grid">
-      <header className="sticky top-0 z-10">
-        <div className="mx-auto max-w-5xl px-4 pt-6">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-3">
-              <div className="h-10 w-10 rounded-2xl flex items-center justify-center bg-brand-600 text-white shadow-soft">
-                <Sparkles />
-              </div>
-              <h1 className="font-extrabold text-2xl md:text-3xl text-gray-900">AI Personas Showcase</h1>
-            </div>
-            <div className="text-xs md:text-sm text-gray-600">Chat persists until refresh</div>
+      <header>
+        <div className="mx-auto max-w-5xl px-4 pt-6 text-center">
+          <div className="flex justify-center mb-4">
           </div>
+          <h1 className="font-extrabold text-4xl md:text-5xl text-center bg-gradient-to-r from-purple-500 via-pink-500 to-orange-400 bg-clip-text text-transparent leading-tight pb-1">
+            Chat with your favourite mentor
+          </h1>
         </div>
       </header>
 
@@ -91,7 +87,6 @@ export default function App() {
                     <div className="text-xs text-gray-600">Chat with {currentPersona.name}</div>
                   </div>
                 </div>
-                <div className="text-xs text-gray-600">History kept per persona</div>
               </div>
 
               <div
@@ -149,9 +144,9 @@ export default function App() {
           </div>
         </section>
       </main>
-
+                  
       <footer className="mx-auto max-w-5xl px-4 pb-10 text-center text-xs text-gray-500">
-        Built with React + Vite + Tailwind.
+        Built with ❤️.
       </footer>
     </div>
   )
