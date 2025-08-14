@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+/* Smooth scroll + font rendering */
+html { scroll-behavior: smooth; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Nice gradient background */
+.bg-grid {
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.2) 1px, transparent 0),
+    radial-gradient(circle at 3px 3px, rgba(255,255,255,0.12) 1px, transparent 0);
+  background-size: 20px 20px, 28px 28px;
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  background: rgba(255,255,255,0.6);
+}
+.dark-glass {
+  backdrop-filter: blur(12px);
+  background: rgba(17,24,39,0.55);
+}
