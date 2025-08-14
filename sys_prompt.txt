@@ -1,4 +1,0 @@
-TODO
-- update subscirbers of socials
-- check country count and list of countires if possible
-- remove unwanted phrases / prompt engineer to make it use less often, not in every sentence
