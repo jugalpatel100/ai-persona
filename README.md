@@ -2,6 +2,9 @@
 
 A modern chat application that allows users to interact with their favourite mentors - Hitesh Choudhary and Piyush Garg, each with their own unique personality and expertise.
 
+## 🚀 Live Demo
+Try the app at: https://ai-persona-frontend-chi.vercel.app/
+
 ## Features
 
 - **Multiple AI Personas**: Choose between different mentors/personalities to chat with
