@@ -16,6 +16,8 @@ Try the app at: https://ai-persona-frontend-chi.vercel.app/
 - **Hitesh Choudhary**: Programming mentor and educator
 - **Piyush Garg**: Tech expert and developer guide
 
+You can view the systems prompts here - [System Prompts](./backend/constants.js)
+
 ## Tech Stack
 
 ### Frontend
