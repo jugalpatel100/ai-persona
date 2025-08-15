@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion'
 import PersonaCard from './components/PersonaCard'
 import ChatMessage from './components/ChatMessage'
 import ChatInput from './components/ChatInput'
+import ClearChatButton from './components/ClearChatButton'
 import { sendChat } from './utils/api'
 import { Sparkles } from 'lucide-react'
 import { BACKEND_URL } from './utils/constants'
@@ -83,16 +84,15 @@ export default function App() {
             <div className="bg-gradient-to-br from-white/70 to-white/40 rounded-[22px] p-4 md:p-6">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <img
-                    src={currentPersona.icon}
-                    alt={currentPersona.name}
-                    className="w-10 h-10 rounded-full object-cover border border-gray-300"
-                  />
+                  <span className="w-10 h-10 rounded-full overflow-hidden">
+                    <img src={currentPersona.icon} alt={currentPersona.name} className="w-full h-full object-cover" />
+                  </span>
                   <div>
                     <div className="font-semibold text-gray-900">{currentPersona.name}</div>
                     <div className="text-xs text-gray-600">Chat with {currentPersona.name}</div>
                   </div>
                 </div>
+                <ClearChatButton activePersona={activePersona} setChats={setChats} />
               </div>
 
               <div
