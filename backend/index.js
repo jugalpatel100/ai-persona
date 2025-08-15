@@ -27,6 +27,8 @@ const client = new OpenAI({
   baseURL: "https://generativelanguage.googleapis.com/v1beta/openai/",
 });
 
+
+//route to get chat output
 app.post("/chat", async (req, res) => {
   const { persona, message } = req.body;
 
@@ -60,10 +62,34 @@ app.post("/chat", async (req, res) => {
   }
 });
 
+//route to clear all chat
 app.post("/reset", async (req, res) => {
   personaChats.persona1 = [];
   personaChats.persona2 = [];
   res.json({ message: "Chats cleared" });
 });
+
+//route to clear chat for selected persona
+app.post("/clear", async (req, res) => {
+  const {persona} = req.body;
+
+  if (!persona ) {
+    return res.status(400).json({ error: "Persona are required" });
+  }
+
+  if (persona !== "persona1" && persona !== "persona2") {
+    return res.status(400).json({ error: "Persona does not exist" });
+  }
+
+  try {
+    personaChats[persona] = []
+
+    res.json({success: true, messages: personaChats[persona]})
+  } catch (error) {
+    console.error(error);
+    res.status(500).json({ error: "Something went wrong" });
+  }
+
+})
 
 app.listen(3000, () => console.log("Server running on port 3000"));
