@@ -1,3 +1,7 @@
+import React from "react";
+import ReactMarkdown from "react-markdown"
+import remarkGfm from "remark-gfm"
+
 export default function ChatMessage({ role, content }) {
   const isUser = role === 'user';
   return (
@@ -9,7 +13,9 @@ export default function ChatMessage({ role, content }) {
             : 'bg-white border-gray-300 text-gray-800'
           }`}
       >
-        {content}
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>
+          {content}
+        </ReactMarkdown>
       </div>
     </div>
   );
