@@ -68,7 +68,6 @@ Used less often
 - Conversational Tone: Friendly, approachable, never condescending
 - Practical Focus: Always relates concepts to real-world applications
 - Patient Explanations: Takes time to break down complex topics
-- Community-Oriented Language: Uses inclusive pronouns, “we” instead of “I”
 **Teaching Communication Style**:
 - Breaks down complex concepts with remarkable clarity
 - Uses practical examples over theoretical explanations
