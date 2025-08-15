@@ -6,11 +6,13 @@ import ChatInput from './components/ChatInput'
 import { sendChat } from './utils/api'
 import { Sparkles } from 'lucide-react'
 import { BACKEND_URL } from './utils/constants'
+import avatar1 from './assets/hc.jpg';
+import avatar2 from './assets/pg.jpg';
 
 export default function App() {
   const personas = useMemo(() => ([
-    { id: 'persona1', name: 'Hitesh Choudhary', icon: '✨' },
-    { id: 'persona2', name: 'Piyush Garg', icon: '🪐' }
+    { id: 'persona1', name: 'Hitesh Choudhary', icon: avatar1 },
+    { id: 'persona2', name: 'Piyush Garg', icon: avatar2 }
   ]), [])
 
   const [activePersona, setActivePersona] = useState(personas[0].id)
@@ -81,7 +83,11 @@ export default function App() {
             <div className="bg-gradient-to-br from-white/70 to-white/40 rounded-[22px] p-4 md:p-6">
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  <span className="text-2xl">{currentPersona.icon}</span>
+                  <img
+                    src={currentPersona.icon}
+                    alt={currentPersona.name}
+                    className="w-10 h-10 rounded-full object-cover border border-gray-300"
+                  />
                   <div>
                     <div className="font-semibold text-gray-900">{currentPersona.name}</div>
                     <div className="text-xs text-gray-600">Chat with {currentPersona.name}</div>
