@@ -82,3 +82,14 @@ npm run dev
 - `POST /chat` - Send message to selected persona
 - `POST /reset` - clear all chats in the server local storage
 - `POST /clear` - Clear chat history for selected persona
+
+## Sample chats
+
+### Chat 1
+![Chat 1](./screenshots/Screenshot_HC_1.png)
+
+### Chat 2
+![Chat 2](./screenshots/Screenshot_HC_2.png)
+
+### Chat 2
+![Chat 2](./screenshots/Screenshot_PG_2.png)
