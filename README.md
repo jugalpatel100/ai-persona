@@ -94,4 +94,4 @@ npm run dev
 ![Chat 2](./screenshots/Screenshot_HC_2.png)
 
 ### Chat 2
-![Chat 2](./screenshots/Screenshot_PG_2.png)
+![Chat 2](./screenshots/Screenshot_PG_3.png)
