@@ -95,3 +95,8 @@ npm run dev
 
 ### Chat 2
 ![Chat 2](./screenshots/Screenshot_PG_3.png)
+
+
+## TODO
+- [ ] Add examples in system prompt of personas to enhance responses
+- [ ] Add feature to edit certain message in the chat and resend
